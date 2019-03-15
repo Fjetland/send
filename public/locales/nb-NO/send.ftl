@@ -83,3 +83,49 @@ totalSize = Total størrelse: { $size }
 copyLinkDescription = Kopier lenken for å dele filen din:
 copyLinkButton = Kopier lenke
 downloadTitle = Last ned filer
+downloadDescription = Denne filen var delt via { -send-brand } med ende til ende kryptering og en link som utløper automatisk.
+trySendDescription = Prøv { -send-brand } for enkel og trygg fildeling.
+# count will always be > 10
+tooManyFiles = { $count ->
+     [one] Bare 1 fil kan opplastes om gangen.
+    *[other] Bare { $count } filer kan opplastes om gangen.
+}
+# count will always be > 10
+tooManyArchives = { $count ->
+     [one] Bare 1 arkiv er tillat.
+    *[other] Bare { $count } arkiv er tillat.
+}
+expiredTitle = Denne linken har utløpt.
+notSupportedDescription = { -send-brand } virker ikke med denne nettleseren. { -send-short-brand } virker best med den siste versjonen av { -firefox }, og vil virke med nåværende versjon av de fleste nettlesere.
+downloadFirefox = Last ned { -firefox }
+# A short representation of a countdown timer containing the number of days, hours, and minutes remaining as digits, example "2d 11h 56m"
+expiresDaysHoursMinutes = { $days }d { $hours }h { $minutes }m
+addFilesButton = Velg filer som skal lastes opp
+uploadButton = Last opp
+# the first part of the string 'Drag and drop files or click to send up to 1GB'
+dragAndDropFiles = Dra og slipp filer
+# the second part of the string 'Drag and drop files or click to send up to 1GB'
+# $size is the size of the file, displayed using the fileSize message as format (e.g. "2.5MB")
+orClickWithSize = eller klikk for og sende opp til { $size }
+addPassword = Beskytt med passord
+emailPlaceholder = Skriv in din e-post
+# $size is the size of the file, displayed using the fileSize message as format (e.g. "2.5MB")
+signInSizeBump = Logg inn for å sende opp til { $size }
+signInButton = Logg inn/Registrer deg
+accountBenefitTitle = Lag en { -firefox }-konto eller logg inn
+# $size is the size of the file, displayed using the fileSize message as format (e.g. "2.5MB")
+accountBenefitLargeFiles = Del filer opp til { $size }
+accountBenefitDownloadCount = Del filer med flere personer
+accountBenefitTimeLimit = { $count ->
+     [one] Hold linker aktive for opp til 1 dag
+    *[other] Hold linker aktive for opp til { $count } dager
+}
+accountBenefitSync = Behandle delte filer fra alle enheter
+accountBenefitMoz =Lær om andre { -mozilla } tjenester
+signOut = Logg ut
+okButton = OK
+downloadingTitle = Laster ned
+noStreamsWarning = Denne nettleseren kan kansje ikke dekryptere en så stor fil.
+noStreamsOptionCopy = Kopier linken for og åpne den i en annen nettleser
+noStreamsOptionFirefox = Prøv vår favoritt nettleser
+noStreamsOptionDownload = Fortsett med denne nettleseren
